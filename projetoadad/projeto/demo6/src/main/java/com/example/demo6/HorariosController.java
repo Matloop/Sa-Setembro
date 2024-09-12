@@ -18,7 +18,7 @@ import java.util.List;
 
 public class HorariosController {
     @FXML
-    private Text horario1, horario2, horario3, horario4, horario5, horario6;
+    private Text horario1, horario2, horario3, horario4, horario5, horario6, salaAtual;
     @FXML
     private Rectangle reservado1, reservado2, reservado3, reservado4, reservado5, reservado6;
     @FXML
@@ -28,7 +28,7 @@ public class HorariosController {
     private List<Rectangle> reservadoRectangles;
     private List<Button> botaoReservarList;
 
-    private int sala;
+    public int sala;
 
     @FXML
     public void initialize() {
@@ -118,5 +118,9 @@ public class HorariosController {
         } else {
             System.out.println("Erro: Índice de retângulo inválido.");
         }
+    }
+
+    public void mostrarSala(int sala ){
+        salaAtual.setText("Sala: " + sala);
     }
 }

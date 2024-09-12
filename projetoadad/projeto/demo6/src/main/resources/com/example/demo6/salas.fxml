@@ -20,7 +20,7 @@
          </items>
       </ToolBar>
       <Text fx:id="ocupacao1" fill="#ebdf07" layoutX="65.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupação Sala 1: " />
-      <Text fx:id="ocupacao3" fill="#ebdf07" layoutX="214.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupação Sala 2:" />
-      <Text fx:id="ocupacao2" fill="#ebdf07" layoutX="410.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupação Sala 3:" />
+      <Text fx:id="ocupacao2" fill="#ebdf07" layoutX="214.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupação Sala 2:" />
+      <Text fx:id="ocupacao3" fill="#ebdf07" layoutX="410.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupação Sala 3:" />
    </children>
 </AnchorPane>

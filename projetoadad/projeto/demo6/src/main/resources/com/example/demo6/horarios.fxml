@@ -26,5 +26,6 @@
       <Button fx:id="botaoReservar5" layoutX="260.0" layoutY="355.0" onAction="#botaoReservar5Pressionado" text="Reservar" />
       <Button fx:id="botaoReservar4" layoutX="43.0" layoutY="343.0" onAction="#botaoReservar4Pressionado" text="Reservar" />
       <Button fx:id="botaoReservar3" layoutX="274.0" layoutY="151.0" onAction="#botaoReservar3Pressionado" text="Reservar" />
+      <Text fx:id="salaAtual" layoutX="252.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
    </children>
 </AnchorPane>

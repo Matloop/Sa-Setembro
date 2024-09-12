@@ -17,6 +17,7 @@ import java.util.List;
 
 import static com.example.demo6.Main.getMap;
 
+
 public class SalaController {
 
     @FXML
@@ -58,9 +59,13 @@ public class SalaController {
 
         atualizarOcupacaoSalas();
 
+
+
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("horarios.fxml"));
         Parent root = loader.load();
         HorariosController horariosController = loader.getController();
+        horariosController.mostrarSala(sala);
         if (horariosController != null) {
             horariosController.setSala(sala);
             System.out.println("HorariosController configurado com sala " + sala);
