@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.SalaController">
+   <children>
+      <Button fx:id="sala1Button" layoutX="122.0" layoutY="142.0" mnemonicParsing="false" onAction="#trocarTelaHorarios" prefHeight="47.0" prefWidth="78.0" style="-fx-background-color: YELLOW;" text="Sala 1" />
+      <Button fx:id="sala2Button" layoutX="214.0" layoutY="142.0" mnemonicParsing="false" onAction="#trocarTelaHorarios" prefHeight="47.0" prefWidth="78.0" style="-fx-background-color: YELLOW;" text="Sala 2" />
+      <Button fx:id="sala3Button" layoutX="300.0" layoutY="142.0" mnemonicParsing="false" onAction="#trocarTelaHorarios" prefHeight="47.0" prefWidth="78.0" style="-fx-background-color: YELLOW;" text="Sala 3" />
+      <Text fill="#eaf202" layoutX="161.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escohla uma sala para ocupar" wrappingWidth="156.263671875" />
+      <Text fx:id="ocupacao1" fill="#ebdf07" layoutX="82.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupação: " />
+      <Text fx:id="ocupacao2" fill="#ebdf07" layoutX="393.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupação:" />
+      <Text fx:id="ocupacao3" fill="#ebdf07" layoutX="225.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocupação:" />
+   </children>
+</AnchorPane>
