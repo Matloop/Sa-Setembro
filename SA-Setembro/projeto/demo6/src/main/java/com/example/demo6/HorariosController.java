@@ -77,7 +77,9 @@ public class HorariosController {
     }
 
     @FXML
-    public void botaoReservar1Pressionado(ActionEvent e) { reservarHorario(0); }
+    public void botaoReservar1Pressionado(ActionEvent e) {
+        reservarHorario(0);
+    }
     @FXML
     public void botaoReservar2Pressionado(ActionEvent e) { reservarHorario(1); }
     @FXML
@@ -113,8 +115,6 @@ public class HorariosController {
             Rectangle rect = reservadoRectangles.get(index);
             Color novaCor = ocupado ? Color.GREEN : Color.RED;
             rect.setFill(novaCor);
-
-            System.out.println("Atualizando cor do retângulo " + index + " para " + (ocupado ? "VERDE" : "VERMELHO"));
         } else {
             System.out.println("Erro: Índice de retângulo inválido.");
         }

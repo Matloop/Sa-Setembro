@@ -25,13 +25,11 @@ public class SalaController {
 
     @FXML
     private Text ocupacao1, ocupacao2, ocupacao3, salasMaisOcupadas;
-
     @FXML
     private Button sala1Button, sala2Button, sala3Button;
     @FXML
     private Arc arc1,arc2,arc3;
     private ArrayList<Arc> arcs;
-
     private List<Text> ocupacoes;
     private int sala;
     private ArrayList<Double> listaOcupacao;
@@ -55,6 +53,31 @@ public class SalaController {
 
     @FXML
     public void trocarTelaHorarios(ActionEvent e) throws IOException {
+        identificarSalas(e);
+        atualizarOcupacaoSalas();
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("horarios.fxml"));
+        Parent root = loader.load();
+
+        HorariosController horariosController = loader.getController();
+
+        horariosController.mostrarSala(sala);
+
+        if (horariosController != null) {
+            horariosController.setSala(sala);
+            System.out.println("HorariosController configurado com sala " + sala);
+        } else {
+            System.out.println("ERRO: HorariosController não encontrado.");
+        }
+
+        Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Tela de horários carregada para sala " + sala);
+    }
+
+    public void  identificarSalas(ActionEvent e){
         Button clickedButton = (Button) e.getSource();
         switch (clickedButton.getId()) {
             case "sala1Button":
@@ -70,30 +93,6 @@ public class SalaController {
                 System.out.println("ID do botão não reconhecido: " + clickedButton.getId());
                 return;
         }
-        System.out.println("Sala selecionada: " + sala);
-        atualizarOcupacaoSalas();
-
-
-
-
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("horarios.fxml"));
-        Parent root = loader.load();
-        HorariosController horariosController = loader.getController();
-        horariosController.mostrarSala(sala);
-
-        if (horariosController != null) {
-            horariosController.setSala(sala);
-            System.out.println("HorariosController configurado com sala " + sala);
-        } else {
-            System.out.println("ERRO: HorariosController não encontrado.");
-        }
-
-        Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-        System.out.println("Tela de horários carregada para sala " + sala);
     }
 
     public void atualizarOcupacaoSalas() {
