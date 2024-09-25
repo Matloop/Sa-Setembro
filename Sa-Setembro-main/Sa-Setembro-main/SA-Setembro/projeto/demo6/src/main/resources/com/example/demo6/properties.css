@@ -1,0 +1,80 @@
+/* Style the AnchorPane */
+AnchorPane {
+    -fx-background-color: #f0f0f0; /* light gray background */
+    -fx-padding: 10; /* add some padding around the edges */
+}
+
+/* Style the Rectangles (reservado1, reservado2, etc.) */
+Rectangle {
+    -fx-border-width: 2; /* add a 2px border */
+    -fx-border-color: black; /* black border color */
+    -fx-border-radius: 5; /* rounded corners */
+}
+
+/* Style the Text elements (horario1, horario2, etc.) */
+Text {
+    -fx-font-size: 18; /* larger font size */
+    -fx-font-weight: bold; /* bold font weight */
+    -fx-fill: #333; /* dark gray text color */
+    -fx-text-alignment: center; /* centralize o texto */
+}
+
+/* Style the Buttons (botaoReservar1, botaoReservar2, etc.) */
+Button {
+    -fx-background-color: #4CAF50; /* green background color */
+    -fx-text-fill: white; /* white text color */
+    -fx-font-size: 16; /* larger font size */
+    -fx-padding: 10; /* add some padding around the text */
+    -fx-border-radius: 5; /* rounded corners */
+}
+
+/* Style the specific Button (Voltar) */
+#voltar {
+    -fx-background-color: #FF9800; /* orange background color */
+}
+
+/* Style the Text element (salaAtual) */
+#salaAtual {
+    -fx-font-size: 24; /* even larger font size */
+    -fx-font-weight: bold; /* bold font weight */
+    -fx-fill: #00698f; /* blue text color */
+}
+
+/* Estilize os 6 horários retos */
+#horario1, #horario2, #horario3, #horario4, #horario5, #horario6 {
+    -fx-font-size: 24; /* tamanho da fonte */
+    -fx-font-weight: bold; /* peso da fonte */
+    -fx-fill: #333; /* cor do texto */
+    -fx-text-alignment: center; /* centralize o texto */
+}
+
+/* Posicione os 6 horários retos */
+#horario1 {
+    -fx-layout-x: 120; /* posição x */
+    -fx-layout-y: 140; /* posição y */
+}
+
+#horario2 {
+    -fx-layout-x: 410; /* posição x */
+    -fx-layout-y: 140; /* posição y */
+}
+
+#horario3 {
+    -fx-layout-x: 270; /* posição x */
+    -fx-layout-y: 140; /* posição y */
+}
+
+#horario4 {
+    -fx-layout-x: 60; /* posição x */
+    -fx-layout-y: 290; /* posição y */
+}
+
+#horario5 {
+    -fx-layout-x: 270; /* posição x */
+    -fx-layout-y: 290; /* posição y */
+}
+
+#horario6 {
+    -fx-layout-x: 440; /* posição x */
+    -fx-layout-y: 290; /* posição y */
+}

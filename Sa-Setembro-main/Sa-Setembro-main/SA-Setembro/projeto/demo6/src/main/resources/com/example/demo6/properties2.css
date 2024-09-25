@@ -1,0 +1,46 @@
+/* Estilo do AnchorPane */
+#anchor1 {
+    -fx-background-color: #F0F0F0; /* Cinza claro */
+}
+
+/* Estilo do Text */
+Text {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-fill: #000; /* Preto para melhor contraste */
+}
+
+/* Estilo do Text com id "salasMaisOcupadas" */
+#salasMaisOcupadas {
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+    -fx-fill: #FF7F50; /* Coral */
+}
+
+/* Estilo do ToolBar */
+ToolBar {
+    -fx-background-color: #ADD8E6; /* Azul claro */
+}
+
+/* Estilo dos Buttons */
+Button {
+    -fx-background-color: #FFFF00; /* Amarelo */
+    -fx-text-fill: #000; /* Preto */
+    -fx-font-size: 18;
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+}
+
+/* Estilo dos Arcs */
+Arc {
+    -fx-fill: #1a75ff; /* Azul */
+    -fx-stroke: #000; /* Preto */
+    -fx-stroke-width: 2;
+}
+
+/* Estilo dos Texts com id "ocupacao1", "ocupacao2" e "ocupacao3" */
+#ocupacao1, #ocupacao2, #ocupacao3 {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-fill: #ebdf07; /* Amarelo suave */
+}

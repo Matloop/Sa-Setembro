@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.HorariosController" stylesheets="@properties.css">
+   <children>
+      <Rectangle fx:id="reservado1" fill="RED" height="120.0" layoutX="150.0" layoutY="50.0" width="120.0" />
+      <Text fx:id="horario1" layoutX="180.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:30" />
+      <Button fx:id="botaoReservar1" layoutX="150.0" layoutY="180.0" onAction="#botaoReservar1Pressionado" text="Reservar" />
+
+      <Rectangle fx:id="reservado2" fill="RED" height="120.0" layoutX="150.0" layoutY="250.0" width="120.0" />
+      <Text fx:id="horario2" layoutX="180.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:30" />
+      <Button fx:id="botaoReservar2" layoutX="150.0" layoutY="380.0" onAction="#botaoReservar2Pressionado" text="Reservar" />
+
+      <Rectangle fx:id="reservado3" fill="RED" height="120.0" layoutX="150.0" layoutY="450.0" width="120.0" />
+      <Text fx:id="horario3" layoutX="180.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:30" />
+      <Button fx:id="botaoReservar3" layoutX="150.0" layoutY="580.0" onAction="#botaoReservar3Pressionado" text="Reservar" />
+
+      <Rectangle fx:id="reservado4" fill="RED" height="120.0" layoutX="370.0" layoutY="50.0" width="120.0" />
+      <Text fx:id="horario4" layoutX="400.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:30" />
+      <Button fx:id="botaoReservar4" layoutX="370.0" layoutY="180.0" onAction="#botaoReservar4Pressionado" text="Reservar" />
+
+      <Rectangle fx:id="reservado5" fill="RED" height="120.0" layoutX="370.0" layoutY="250.0" width="120.0" />
+      <Text fx:id="horario5" layoutX="400.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:30" />
+      <Button fx:id="botaoReservar5" layoutX="370.0" layoutY="380.0" onAction="#botaoReservar5Pressionado" text="Reservar" />
+
+      <Rectangle fx:id="reservado6" fill="RED" height="120.0" layoutX="370.0" layoutY="450.0" width="120.0" />
+      <Text fx:id="horario6" layoutX="400.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17:30" />
+      <Button fx:id="botaoReservar6" layoutX="370.0" layoutY="580.0" onAction="#botaoReservar6Pressionado" text="Reservar" />
+
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#trocarTelasSalas" text="Voltar" />
+      <Text fx:id="salaAtual" layoutX="252.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+
+
+
+   </children>
+</AnchorPane>
